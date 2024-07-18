@@ -7,7 +7,7 @@ This project is a React application designed to display a grid of products based
 **Start Sever:**
 1. Clone the repository:
    - git clone https://github.com/tomnguyen211/product-test.git
-   - cd product-test:
+   - cd product-test
 2. Install dependencies:
    - npm install
 3. Start a sever:
