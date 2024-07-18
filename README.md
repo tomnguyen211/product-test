@@ -21,7 +21,7 @@ This project is a React application designed to display a grid of products based
 2. Start the Cypress
    - npx cypress open
 3. Choose E2E Testing
-4. Choose a browser (preferbly Chrome)
+4. Choose a browser (preferably Chrome)
 5. Choose spec.cy.js
 
      
