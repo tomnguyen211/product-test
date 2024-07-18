@@ -1,6 +1,6 @@
 describe('Product Grid Tests', () => {
   beforeEach(() => {
-      cy.visit('http://localhost:3000/');
+      cy.visit('http://localhost:3000/product-test');
   });
 
   it('Page loads successfully', () => {
