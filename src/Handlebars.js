@@ -24,7 +24,7 @@ function Handlebars()
                 products.map((product,i) =>(
                     <div key={i} className="grid-tile">
                         <img src={product.image} alt={product.name} className="grid-image"/>
-                        <h2>{product.name}</h2>
+                        <h3>{product.name}</h3>
                         <p className="price">${product.price}</p>
                     </div>
                 ))
