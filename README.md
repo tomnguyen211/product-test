@@ -5,6 +5,7 @@ This project is a React application designed to display a grid of products based
 - Cypress Tests.
 
 **Start Sever:**
+(Note: preferably using Visual Studio Code)
 1. Clone the repository:
    - git clone https://github.com/tomnguyen211/product-test.git
    - cd product-test
