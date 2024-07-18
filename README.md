@@ -24,6 +24,9 @@ This project is a React application designed to display a grid of products based
 4. Choose a browser (preferably Chrome)
 5. Choose spec.cy.js
 
+
+**Github Website Host:**
+https://tomnguyen211.github.io/product-test
      
 
 
