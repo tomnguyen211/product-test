@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/product-test-build/static/css/main.12c0b8e0.css",
+    "main.js": "/product-test-build/static/js/main.40e26d61.js",
+    "index.html": "/product-test-build/index.html",
+    "main.12c0b8e0.css.map": "/product-test-build/static/css/main.12c0b8e0.css.map",
+    "main.40e26d61.js.map": "/product-test-build/static/js/main.40e26d61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12c0b8e0.css",
+    "static/js/main.40e26d61.js"
+  ]
+}
