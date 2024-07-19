@@ -16,12 +16,13 @@ This project is a React application designed to display a grid of products based
 
 
 **Cypress Test:**
+(Note: make sure you already start server)
 1. Install Cypress
    - npm install cypress --save-dev
    - Note: Make sure you already in the product-test folder.
 2. Start the Cypress
    - npx cypress open
-3. Choose E2E Testing
+3. Choose E2E Testing 
 4. Choose a browser (preferably Chrome)
 5. Choose spec.cy.js
 
