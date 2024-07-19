@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import data from './product-sample.json'
+import { useMediaQuery } from "react-responsive";
 
 function Handlebars()
 {
@@ -14,12 +15,15 @@ function Handlebars()
         setProducts(updated);
     };
 
+    const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+    const textStyle = isMobile ? 'grid-layout-mobile' : 'grid-layout-desktop';
+
     return (          
         <div>
             <div className="sale-button">
                 <button onClick={saleButton}>Apply 50% Sale</button>
             </div>
-            <div className="grid-layout">
+            <div className={textStyle}>
             {
                 products.map((product,i) =>(
                     <div key={i} className="grid-tile">

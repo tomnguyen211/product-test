@@ -1,15 +1,21 @@
-.grid-layout {
+.grid-layout-desktop {
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
-    gap: 200px 0px;
+    gap: 20px;
 }
+
+.grid-layout-mobile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
 .grid-image{
     width: 100%;
-    height: 100%; 
+    height: auto;
 }
 
 .grid-tile {
-    border: 1px solid #080000;
     text-align: center;
 }
 .sale-button {
