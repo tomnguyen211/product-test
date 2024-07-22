@@ -35,9 +35,12 @@ function Handlebars()
          * @returns {bool} Check whether if resolution is under 480px
          */
         const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
-        const layoutStyle = isMobile ? 'grid-layout-mobile' : 'grid-layout-desktop';
 
-        return layoutStyle;
+        if(isMobile)
+            return 'grid-layout-mobile'
+        else
+            return 'grid-layout-desktop';
+
     }
 
     return (          
@@ -50,8 +53,8 @@ function Handlebars()
                 products.map((product,i) =>(
                     <div key={i} className="grid-tile">
                         <img src={product.image} alt={product.name} className="grid-image"/>
-                        <h3 className="word-style">{product.name}</h3>
-                        <p>${product.price}</p>
+                        <p className="word-style">{product.name}</p>
+                        <h3>${product.price}</h3>
                     </div>
                 ))
             }

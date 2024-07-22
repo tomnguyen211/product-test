@@ -3,7 +3,7 @@ import productData from '../../src/product-sample.json';
 describe('Product Grid Tests', () => {
 
     // Iphone X - Mobile Device
-    const mobileView = [374, 812];
+    const mobileView = [390, 812];
     // Desktop view
     const desktopView = [1920, 1080];
 
@@ -34,7 +34,7 @@ describe('Product Grid Tests', () => {
     it('Sale button works as expected', () => {
         // Original prices
         let originalPrices = [];
-        cy.get('.grid-tile p').each(($price) => {
+        cy.get('.grid-tile h3').each(($price) => {
             originalPrices.push(parseFloat($price.text().replace('$', '')));
         });
 
@@ -42,7 +42,7 @@ describe('Product Grid Tests', () => {
         cy.get('.sale-button button').click();
 
         // 50% prices
-        cy.get('.grid-tile p').each(($price, index) => {
+        cy.get('.grid-tile h3').each(($price, index) => {
             const newPrice = parseFloat($price.text().replace('$', ''));
             expect(newPrice).to.equal((originalPrices[index] / 2));
         });
