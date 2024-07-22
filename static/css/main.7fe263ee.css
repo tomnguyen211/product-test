@@ -1,0 +1,2 @@
+.grid-layout-desktop{grid-gap:20px;display:grid;font-size:130%;gap:20px;grid-template-columns:repeat(3,minmax(100px,1fr))}.grid-layout-mobile{grid-gap:20px;display:grid;font-size:70%;gap:20px;grid-template-columns:repeat(3,1fr)}.grid-image{height:auto;width:100%}.grid-tile,.sale-button{text-align:center}.sale-button{margin:10px}
+/*# sourceMappingURL=main.7fe263ee.css.map*/
