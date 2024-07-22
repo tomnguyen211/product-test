@@ -2,12 +2,14 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
     gap: 20px;
+    font-size: 100%;
 }
 
 .grid-layout-mobile {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    font-size: 70%;
 }
 
 .grid-image{
@@ -22,4 +24,5 @@
     margin: 10px;
     text-align: center;
 }
+
 
