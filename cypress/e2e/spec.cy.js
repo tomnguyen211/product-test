@@ -1,4 +1,5 @@
 import productData from '../../src/product-sample.json';
+import priceAscProduct from './fixtures/product-pirce-asc.json';
 
 describe('Product Grid Tests', () => {
 
@@ -39,7 +40,7 @@ describe('Product Grid Tests', () => {
         });
 
         // Sale button
-        cy.get('.sale-button button').click();
+        cy.get('#saleButton').click();
 
         // 50% prices
         cy.get('.grid-tile h3').each(($price, index) => {
@@ -47,4 +48,23 @@ describe('Product Grid Tests', () => {
             expect(newPrice).to.equal((originalPrices[index] / 2));
         });
     });
+
+    it('Price accesding works as expected', () => {
+
+        // Sale button
+        cy.get('#sortPrice').click();
+
+        cy.get('.grid-tile h3').each(($price, index) => {
+            const currentPrice = parseFloat($price.text().replace('$', ''));
+            expect(currentPrice).to.equal(priceAscProduct[index].price);
+        });
+
+        cy.get('.grid-tile p').each((name, index) => {
+            const currentName = name.text();
+            expect(currentName).to.equal(priceAscProduct[index].name);
+        });
+        
+    });
+
+    
 });

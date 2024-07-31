@@ -22,7 +22,27 @@ function Handlebars()
         
         setProducts(updated);
     };
-    
+
+    const sortByPrice = () => {
+
+        const updated = [...products];
+        updated.sort(function(a, b) { 
+            return a.price - b.price;
+        })
+            
+        setProducts(updated);
+    };
+
+    const sortByName = () => {
+
+        const updated = [...products];
+        updated.sort(function(a, b) { 
+            return a.name.localeCompare(b.name);
+        })
+            
+        setProducts(updated);
+    };
+   
     /**
      * Determines the layout style based on the screen width.
      * 
@@ -46,7 +66,9 @@ function Handlebars()
     return (          
         <div>
             <div className="sale-button">
-                <button onClick={saleButton}>Apply 50% Sale</button>
+                <button onClick={() => saleButton()} id="saleButton">Apply 50% Sale</button>
+                <button onClick={() => sortByPrice()} id="sortPrice">Sort By Price</button>
+                <button onClick={() => sortByName()} id="sortName">Sort By Name</button>
             </div>
             <div className={GetCSSLayoutStyleByScreenType()}>
             {
